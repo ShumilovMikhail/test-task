@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>Add book</h2>
+<mat-dialog-content>
+  <form [formGroup]="taskForm" class="form">
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Title"
+      formControlName="title"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Description"
+      formControlName="description"
+    />
+  </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button matButton [disabled]="taskForm.invalid" (click)="submit()">Add</button>
+  <button matButton (click)="close()">Close</button>
+</mat-dialog-actions>

@@ -1,0 +1,8 @@
+<div class="container">
+  <a [routerLink]="['/']">Вернуться</a>
+  @if(task(); as task) {
+    <h2>{{task.title}}</h2>
+    <p class="description">Описание: {{task.description}}</p>
+    <p class="status">Статус: {{task.isCompleted ? 'Выполнена' : 'Не выполнена'}}</p>
+  }
+</div>

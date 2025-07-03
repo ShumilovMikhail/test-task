@@ -1,0 +1,37 @@
+a {
+  text-decoration: none;
+  color: black;
+  &:hover .example-card {
+    background-color: rgba(158, 154, 154, 0.205);
+    transition: .15s all ease-in;
+  }
+}
+
+.container {
+  width: 1230px;
+  margin: 10px auto;
+}
+
+.catalog {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.example-card {
+  width: 400px;
+}
+
+.example-card-footer {
+  padding: 16px;
+}
+
+.not-found {
+  margin: 0 auto;
+  font-size: 26px;
+}
+
+.mdc-button+.delete-button .mat-mdc-button-persistent-ripple+.mdc-button__ripple::before {
+  background-color: transparent;
+}
